@@ -272,7 +272,7 @@ function isMobile() {
 
 
 //全局变量定义
-var lrc = [{ "lineLyric": "昔枫音乐盒", "time": "2" }, { "lineLyric": "VIP音乐解析", "time": "4" }];
+var lrc = [{ "lineLyric": "Sky音乐盒", "time": "2" }, { "lineLyric": "VIP音乐解析", "time": "4" }];
 var lrc_count = 0;
 var mp3Url = "";
 var displayFlag = 'play';
@@ -406,7 +406,7 @@ function switchSongs(parameter) {
   var singer = parameter['artist'];
   songName.innerHTML = name.slice(0, 15 + (name.length - name.replace(/&[a-z]+;/g, " ").length));
   singerName.innerHTML = singer.slice(0, 15 + (singer.length - singer.replace(/&[a-z]+;/g, " ").length));
-  document.title = `${name.replace(/&[a-z]+;/g, " ")} - ${singer.replace(/&[a-z]+;/g, " ")}  (昔枫音乐盒)`;
+  document.title = `${name.replace(/&[a-z]+;/g, " ")} - ${singer.replace(/&[a-z]+;/g, " ")}  (Sky音乐盒)`;
 
   document.querySelector('#cover2').src = parameter["pic"];
   document.querySelector('#sidebarSongName').innerHTML = name;
@@ -608,14 +608,14 @@ function playReset() {
   lrc_count = 0;
   songName.innerHTML = '歌曲';
   singerName.innerHTML = '歌手';
-  document.title = '昔枫音乐盒';
-  lrc = [{ "lineLyric": "昔枫音乐盒", "time": "2" }, { "lineLyric": "VIP音乐解析", "time": "4" }];
+  document.title = 'Sky音乐盒';
+  lrc = [{ "lineLyric": "Sky音乐盒", "time": "2" }, { "lineLyric": "VIP音乐解析", "time": "4" }];
   cover.src = 'https://pic.imgdb.cn/item/65159fbfc458853aefcccaee.jpg';
   iframe.lastNum = 9999;
   playingNum = 9999;
   clearInterval(timeCount);
   iframe.pagePX = 0;
-  document.querySelector('#sidebarSongName').innerHTML = '昔枫音乐盒';
+  document.querySelector('#sidebarSongName').innerHTML = 'Sky音乐盒';
   document.querySelector('#sidebarSingerName').innerHTML = 'VIP音乐解析';
   document.querySelector('#lrc_p').innerHTML = '<p>该页面正在开发中</p><p>可能存在Bug</p>';
   document.querySelector('#cover2').src = 'https://pic.imgdb.cn/item/65159fbfc458853aefcccaee.jpg';
@@ -947,7 +947,7 @@ function mediaSessionUpdate() {
   navigator.mediaSession.metadata = new MediaMetadata({
     title: document.querySelector('#sidebarSongName').innerHTML.replace(/&[a-z]+;/g, " "),
     artist: document.querySelector('#sidebarSingerName').innerHTML.replace(/&[a-z]+;/g, " "),
-    album: '昔枫音乐盒',
+    album: 'Sky音乐盒',
     artwork: [{ src: cover.src, sizes: '120x120', type: 'image/png' }]
   });
 }
