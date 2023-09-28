@@ -1,7 +1,7 @@
 :root {
   --bg-image: linear-gradient(to bottom, #daeeff, #b0daff);
   --lrc-HL: #199dfc;
-  --music-cover: url('https://ali.mu-jie.cc/img/cover01.png');
+  --music-cover: url('https://pic.imgdb.cn/item/65159fbfc458853aefcccaee.jpg');
   --sidebarEl1-closeLeft: -100%;
   --sidebarEl2-closeLeft: calc(100% + 20px);
   --blur--5px-: blur(5px);
