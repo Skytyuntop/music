@@ -744,7 +744,7 @@ function getNotificationPerm() {
 function lrcSelectOnchange() {
   if (document.querySelector('#lrcSelect').value == 'open') {
     window.parent.lrcSelectFlag = true;
-    let tempNotification = new Notification(`昔枫音乐盒`, {
+    let tempNotification = new Notification(`Sky音乐盒`, {
       body: `已打开歌词显示\n(本次有效，下次打开音乐盒需要重新打开)`,
       tag: `lrc`,
       renotify: true,
