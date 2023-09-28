@@ -568,7 +568,7 @@ initStorage('musicBoxList', '[]');
 
 //版本升级消息
 if (localStorage.getItem('Version') !== Version) {
-  popup.alert(`<font color="#323232">v${Version} 更新<br><br>1. 新增歌单推荐的分类功能<br>2. 优化侧边栏选项和歌单推荐的样式<br><a target="_blank" href="https://mu-jie.cc/musicBoxUpdate/">查看历史更新</a></font>`);
+  popup.alert(`<font color="#323232">v${Version} 更新<br><br>1. 新增歌单推荐的分类功能<br>2. 优化侧边栏选项和歌单推荐的样式<br></font>`);
   localStorage.setItem('Version', Version)
 }
 version_span.innerHTML = Version;
