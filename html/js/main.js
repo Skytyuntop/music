@@ -595,7 +595,7 @@ window.addEventListener('error', function (event) {
   var target = event.target;
   if (!isMobile() && (target.nodeName === 'AUDIO' && target.error !== null && audioPlayer.src.includes('mp3'))) {
     console.log('音频资源加载失败：', target.src);
-    popup.alert('受浏览器限制，播放音频需要用户设置网站权限<br><a class="link" target="_blank" href="https://mu-jie.cc/static-pages/网站权限.html">查看设置步骤</a>');
+    popup.alert('受浏览器限制，播放音频需要用户设置网站权限<br><a class="link" target="_blank" href="https://music.skytyun.top/%E7%BD%91%E7%AB%99%E6%9D%83%E9%99%90.html">查看设置步骤</a>');
   }
 }, true);
 
