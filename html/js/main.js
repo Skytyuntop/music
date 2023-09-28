@@ -610,7 +610,7 @@ function playReset() {
   singerName.innerHTML = '歌手';
   document.title = '昔枫音乐盒';
   lrc = [{ "lineLyric": "昔枫音乐盒", "time": "2" }, { "lineLyric": "VIP音乐解析", "time": "4" }];
-  cover.src = 'https://ali.mu-jie.cc/img/cover01.png';
+  cover.src = 'https://pic.imgdb.cn/item/65159fbfc458853aefcccaee.jpg';
   iframe.lastNum = 9999;
   playingNum = 9999;
   clearInterval(timeCount);
@@ -618,10 +618,10 @@ function playReset() {
   document.querySelector('#sidebarSongName').innerHTML = '昔枫音乐盒';
   document.querySelector('#sidebarSingerName').innerHTML = 'VIP音乐解析';
   document.querySelector('#lrc_p').innerHTML = '<p>该页面正在开发中</p><p>可能存在Bug</p>';
-  document.querySelector('#cover2').src = 'https://ali.mu-jie.cc/img/cover01.png';
+  document.querySelector('#cover2').src = 'https://pic.imgdb.cn/item/65159fbfc458853aefcccaee.jpg';
   lrcCurrentLine = 0;
   lrcUpdate(0);
-  root.style.setProperty('--music-cover', `url('https://ali.mu-jie.cc/img/cover01.png')`);
+  root.style.setProperty('--music-cover', `url('https://pic.imgdb.cn/item/65159fbfc458853aefcccaee.jpg')`);
   setTimeout(() => {
     playPageSongListUpdate(playList);
   }, 100);
